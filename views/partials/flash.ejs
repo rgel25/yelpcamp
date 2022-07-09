@@ -1,0 +1,26 @@
+<% if(success && success.length) {%>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Request successful!</strong>
+  <%= success %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<%} %>
+
+
+<% if(error && error.length) {%>
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>Something went wrong...</strong>
+  <%= error %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<%} %>
